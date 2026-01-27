@@ -8,8 +8,9 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-site_theme               : "sunrise" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
+site_theme               : "mint" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
 title                    : "Colin Billhardt"
+
 title_separator          : "-"
 name                     : &name "Colin Billhardt"
 description              : &description "MSc Data Science graduate"   # Update this with a general description of your site, this is the default if not overridden by a page
