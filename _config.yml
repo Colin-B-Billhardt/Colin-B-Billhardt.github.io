@@ -10,12 +10,10 @@
 locale                   : "en-US"
 site_theme               : "air" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
 title                    : "Colin Billhardt"
-
 title_separator          : "-"
 name                     : &name "Colin Billhardt"
 description              : &description "MSc Data Science graduate"   # Update this with a general description of your site, this is the default if not overridden by a page
-url                      : "https://Colin-B-Billhardt.github.io" # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
-                                                           # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
+url                      : "https://Colin-B-Billhardt.github.io" # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",                                                       # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "Colin-B-Billhardt/Colin-B-Billhardt.github.io"
 
@@ -28,7 +26,7 @@ author:
   avatar           : "https://Colin-B-Billhardt.github.io/images/profile.png"
   name             : "Colin Billhardt"
   pronouns         : # example: "she/her"  
-  bio              : "MSc Data Science (distinction) at the University of Bath. BSc Computer Science with Management from King's College London."
+  bio              : "MSc Data Science graduate from the University of Bath. Passionate about solving complex and interesting problems."
   location         : "München"
   employer         : 
   uri              : # URL
