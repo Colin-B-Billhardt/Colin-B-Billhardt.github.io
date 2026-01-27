@@ -12,7 +12,9 @@ redirect_from:
 
 I'm Colin Billhardt, a data scientist with an MSc in Data Science (distinction) from the University of Bath and a BSc in Computer Science with Management from King's College London.
 
-[Download my CV](/Colin_Beniyaz_Billhardt_CV.pdf)
+[Download my English CV](/Colin_Beniyaz_Billhardt_CV.pdf)
+
+[Download my German CV](/Colin_B_Billhardt_Lebenslauf.pdf)
 
 ## Research Interests
 
