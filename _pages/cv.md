@@ -7,7 +7,7 @@ redirect_from:
   - /resume
 ---
 
-{% Colin_Beniyaz_Billhardt_CV.pdf %}
+{% %}
 
 Education
 ======
