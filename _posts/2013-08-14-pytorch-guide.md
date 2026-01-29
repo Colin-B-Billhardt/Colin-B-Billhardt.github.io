@@ -35,6 +35,12 @@ class Net(nn.Module):
       return self.fc2(x)
 ```
 
+In the code block above, I've defined our class with the constructor function and the forward function. The constructor function is where we define our model architecure, namely the amount and size of our layers. Going through the constructor function line by line, you will first see that we have called the initialization functioun from the super() class. This line executes the initialiation function from the nn.Module class which we are inheriting from. Next we are defining our layers. To define the structure of a layer we need to define two parameters: the input size and the output feature size. Also note that the input size of a layer must match the output size of the previous layer. 
+
+The forward function defines our forward propogation behaviour. Without it, we wouldn't be able to calculate the output of our model. The first line in the function is applying the ReLU activation function to the output of the fc1 layer. In the next line we return the output of the fc2 layer which takes the activation ouput we calculated in the line before as input.
+
+So far this should all make sense. Next we will be going through how to load our data.
+
 ```python
 from torch.utils.data import Dataset
 from torchvision import datasets
@@ -54,6 +60,8 @@ test_data = datasets.FashionMNIST(
     transform = ToTensor()
 )
 ```
+To better understand better what each library is used for, I have only imported the necessary libraries for each code block however, you are free to import all libraries at the begining if you are following along at home. It is often easier to work with data if we load it directly from PyTorch instead of downloading the dataset from online. 
+
 ```python
 criterion = nn.CrossEntropyLoss()
 optimizer = optim.Adam(model.parameters(), lr = 0.01) #our optimizer is applying the weights update formula?
