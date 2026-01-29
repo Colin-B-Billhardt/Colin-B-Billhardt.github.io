@@ -20,5 +20,19 @@ So, we begin with deciding on roughly what the specifications of our model (we c
 
 Okay, you have now made some key decisions regarding your model architecure but now you've actually got to code it somehow. In PyTorch this is done by defining a class which has two main functions:
 
+```python
+import torch
+import torch.nn as nn
+
+class Net(nn.Module):
+    def __init__(self):
+        super().__init__()
+        self.fc1 = nn.Linear(28, 28)
+        self.fc2 = nn.Linear(28, 10)
+
+    def forward(self, x):
+      x = torch.relu(self.fc1(x))
+      return self.fc2(x)
+```
 
 ------
