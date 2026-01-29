@@ -71,9 +71,12 @@ from torch.utils.data import DataLoader
 #we need the train loader to turn the label into a tensor (plus some other stuff?) also turns data into batches
 train_loader = DataLoader(training_data, batch_size=64, shuffle=True) 
 ```
+In the above code snippet we defining our loss function, which in this case is Cross Entropy Loss, as well as our optimizer. The optimizer has the job of adjusting the weights in our model and therfore takes the model.parameters() function, and a learning rate as inputs.
+
+To transform our data such that it is split into smaller batches (to improve the run-time of our model) we use the DataLoader function. It also helps transform our labels (true output values) from integers into tensors.
 
 ```python
-for epoch in range(5): #chosen 5 epochs
+for epoch in range(5): 
     for input, label in train_loader:
     
         output = model(input)
@@ -87,4 +90,8 @@ for epoch in range(5): #chosen 5 epochs
         loss.backwards()
         optimizer.step()
 ```
+
+Finally we have reached training loop. This is the final piece of our puzzle. Our first loop is for each epoch we want to train the model for while the next loop is iterating through the inputs and labels of our training data (which is in our train_loder variable). Our model prediction is called by passing the training input into the model instance and the loss is then calculated by passing the output and the target output into our criterion. 
+
+Now we have calculated the forward pass as well as the loss its time for us to begin the backward pass. The last 3 lines of code in our training loop succintly accomplish this. Optimizer.zero_grad() stores the gradients while loss.backwards() calls the backwards function from the nn.Module class and optimzer.step() is applying the weight update formula to all of our trainable parameters.
 ------
