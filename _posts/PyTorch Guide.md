@@ -1,7 +1,7 @@
 ---
 title: 'PyTorch Guide'
 date: 2013-08-14
-permalink: /posts/2013/08/PyTorch Guide/
+permalink: /posts/2013/08/pytorch-guide/
 tags:
   - Learning
   - Guide
