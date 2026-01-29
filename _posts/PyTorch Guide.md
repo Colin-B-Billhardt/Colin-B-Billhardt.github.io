@@ -1,11 +1,11 @@
 ---
-title: 'Blog Post number 2'
+title: 'PyTorch Guide'
 date: 2013-08-14
-permalink: /posts/2013/08/blog-post-2/
+permalink: /posts/2013/08/PyTorch Guide/
 tags:
-  - cool posts
-  - category1
-  - category2
+  - Learning
+  - Guide
+  - Machine Learning
 ---
 An adequate guide to becoming adequate with PyTorch
 ======
