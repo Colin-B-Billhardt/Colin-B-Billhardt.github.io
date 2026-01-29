@@ -35,4 +35,48 @@ class Net(nn.Module):
       return self.fc2(x)
 ```
 
+```python
+from torch.utils.data import Dataset
+from torchvision import datasets
+from torchvision.transforms import ToTensor
+
+training_data = datasets.FashionMNIST(
+    root = "data", 
+    train = True,
+    download = True,
+    transform = ToTensor()
+)
+
+test_data = datasets.FashionMNIST(
+    root = "data",
+    train = False,
+    download = True,
+    transform = ToTensor()
+)
+```
+```python
+criterion = nn.CrossEntropyLoss()
+optimizer = optim.Adam(model.parameters(), lr = 0.01) #our optimizer is applying the weights update formula?
+
+from torch.utils.data import DataLoader
+
+#we need the train loader to turn the label into a tensor (plus some other stuff?) also turns data into batches
+train_loader = DataLoader(training_data, batch_size=64, shuffle=True) 
+```
+
+```python
+for epoch in range(5): #chosen 5 epochs
+    for input, label in train_loader:
+    
+        output = model(input)
+        
+        loss = criterion(output, label)
+        
+
+        #backward pass
+
+        optimizer.zero_grad()
+        loss.backwards()
+        optimizer.step()
+```
 ------
