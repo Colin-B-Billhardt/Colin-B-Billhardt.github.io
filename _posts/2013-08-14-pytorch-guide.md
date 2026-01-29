@@ -94,4 +94,5 @@ for epoch in range(5):
 Finally we have reached training loop. This is the final piece of our puzzle. Our first loop is for each epoch we want to train the model for while the next loop is iterating through the inputs and labels of our training data (which is in our train_loder variable). Our model prediction is called by passing the training input into the model instance and the loss is then calculated by passing the output and the target output into our criterion. 
 
 Now we have calculated the forward pass as well as the loss its time for us to begin the backward pass. The last 3 lines of code in our training loop succintly accomplish this. Optimizer.zero_grad() stores the gradients while loss.backwards() calls the backwards function from the nn.Module class and optimzer.step() is applying the weight update formula to all of our trainable parameters.
+
 ------
