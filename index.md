@@ -68,5 +68,4 @@ If you're also interested in the intersection between technology and nature, fee
 - [{{ book.title }}]({{ book.url | relative_url }})
 {% else %}
 *No books listed yet.*
-{% endfor %}ten or am working on will be listed here.*
-{% endif %}
+{% endfor %}
