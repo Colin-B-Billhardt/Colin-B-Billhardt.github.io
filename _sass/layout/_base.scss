@@ -1,28 +1,16 @@
 /* ==========================================================================
    BASE ELEMENTS
    ========================================================================== */
-# The following is the order of the links in the header of the website.
-#
-# All links point to anchors on the homepage (single-page layout).
 
-main:
-  - title: "About"
-    url: /#about
+html {
+  /* sticky footer fix */
+  position: relative;
+  min-height: 100%;
 
-  - title: "Blog Posts"
-    url: /#blog
-
-  - title: "Ecological & Climate"
-    url: /#climate
-
-  - title: "Technical Projects"
-    url: /#projects
-
-  - title: "Books"
-    url: /#books
-
-  - title: "Research Papers"
-    url: /#papers
+  /* smooth in-page scrolling, offset for the fixed masthead */
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
 
 body {
   /* Set via _themes.scss */
