@@ -6,13 +6,13 @@ main:
   - title: "About"
     url: /#about
 
-  - title: "Blog Posts"
+  - title: "Writing"
     url: /#blog
 
   - title: "Ecological & Climate"
     url: /#climate
 
-  - title: "Technical Projects"
+  - title: "Projects"
     url: /#projects
 
   - title: "Books"
