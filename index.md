@@ -35,7 +35,11 @@ Besides traditional machine learning and deep learning, I am particularly intere
 ## Ecological Information & Climate Change Posts
 {: #climate}
 
-{% assign climate_posts = site.posts | where_exp: "post", "post.tags contains 'Climate' or post.tags contains 'Ecology' or post.categories contains 'Climate' or post.categories contains 'Ecology'" %}
+{% assign climate_tags = site.posts | where_exp: "post", "post.tags contains 'Climate'" %}
+{% assign ecology_tags = site.posts | where_exp: "post", "post.tags contains 'Ecology'" %}
+{% assign climate_cats = site.posts | where_exp: "post", "post.categories contains 'Climate'" %}
+{% assign ecology_cats = site.posts | where_exp: "post", "post.categories contains 'Ecology'" %}
+{% assign climate_posts = climate_tags | concat: ecology_tags | concat: climate_cats | concat: ecology_cats | uniq %}
 {% if climate_posts.size > 0 %}
 {% for post in climate_posts %}
 - **[{{ post.title }}]({{ post.url | relative_url }})** <span class="page__meta">{{ post.date | date: "%B %-d, %Y" }}</span>
@@ -43,7 +47,6 @@ Besides traditional machine learning and deep learning, I am particularly intere
 {% else %}
 *Coming soon — posts about ecology and climate change will appear here automatically. Tag a post with `Climate` or `Ecology` in its front matter to have it show up in this section.*
 {% endif %}
-
 ---
 
 ## Technical Projects
