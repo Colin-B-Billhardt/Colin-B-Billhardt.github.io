@@ -35,18 +35,18 @@ If you're also interested in the intersection between technology and nature, fee
 ## Writing
 {: #writing}
 
+### Ecological Informatics
+
+- [Example: Modeling Deforestation with Satellite Data](#)
+- [Example: A Data Scientist's Guide to Carbon Accounting](#)
+
+### Everything Else Technical
+
 {% for post in site.posts %}
 - [{{ post.title }}]({{ post.url | relative_url }})
 {% else %}
 *No posts yet — check back soon.*
 {% endfor %}
-
----
-
-## Ecological Information & Climate Change Posts
-{: #climate}
-
-[Coming soon](#)
 
 ---
 
@@ -64,12 +64,9 @@ If you're also interested in the intersection between technology and nature, fee
 ## Books
 {: #books}
 
-{% if site.books.size > 0 %}
 {% for book in site.books %}
-### [{{ book.title }}]({{ book.url | relative_url }})
-{{ book.excerpt }}
-
-{% endfor %}
+- [{{ book.title }}]({{ book.url | relative_url }})
 {% else %}
-*Coming soon — books I've written or am working on will be listed here.*
+*No books listed yet.*
+{% endfor %}ten or am working on will be listed here.*
 {% endif %}
