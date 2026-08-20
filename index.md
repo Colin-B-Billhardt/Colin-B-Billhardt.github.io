@@ -11,11 +11,7 @@ redirect_from:
 ## About Me
 {: #about}
 
-I'm Colin Billhardt, a data scientist with an MSc in Data Science (Distinction) from the University of Bath and a BSc in Computer Science with Management from King's College London.
-
-### Research Interests
-
-Besides traditional machine learning and deep learning, I am particularly interested in computer vision and pose estimation projects. My Masters thesis "Towards quantitative analysis for climbing - technique observation using pose estimation" evaluated the accuracy of current pose-estimation models when used in a climbing specific setting. Read more about my masters thesis in the writing section below.
+I'm Colin, a Technology and AI consultant based in Munich. My passion lies in the application of technology to help solve climate change related issues. If you're also interested in the intersection between technology and nature, feel free to browse through some of my articles on the topic below or my thoughts on some interesting research papers I've recently read. You can reach me for any inquiries at colin.Billhardt@gmail.com.
 
 [English CV](/Colin_Beniyaz_Billhardt_CV.pdf)
 <br>
