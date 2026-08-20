@@ -13,36 +13,34 @@ redirect_from:
 
 I'm Colin Billhardt, a data scientist with an MSc in Data Science (Distinction) from the University of Bath and a BSc in Computer Science with Management from King's College London.
 
+### Research Interests
+
+Besides traditional machine learning and deep learning, I am particularly interested in computer vision and pose estimation projects. My Masters thesis "Towards quantitative analysis for climbing - technique observation using pose estimation" evaluated the accuracy of current pose-estimation models when used in a climbing specific setting. Read more about my masters thesis in the writing section below.
+
 [English CV](/Colin_Beniyaz_Billhardt_CV.pdf)
 <br>
 [German CV](/Colin_B_Billhardt_Lebenslauf.pdf)
 
-### Connect
-
-<ul class="about-socials" style="list-style:none; padding:0; margin:1em 0; display:flex; flex-wrap:wrap; gap:1.25rem;">
-{% if site.author.github %}<li><a href="https://github.com/{{ site.author.github }}">GitHub</a></li>{% endif %}
-{% if site.author.linkedin %}<li><a href="https://www.linkedin.com/in/{{ site.author.linkedin }}">LinkedIn</a></li>{% endif %}
-{% if site.author.email %}<li><a href="mailto:{{ site.author.email }}">Email</a></li>{% endif %}
-{% if site.author.twitter %}<li><a href="https://twitter.com/{{ site.author.twitter }}">X (Twitter)</a></li>{% endif %}
-{% if site.author.bluesky %}<li><a href="https://bsky.app/profile/{{ site.author.bluesky }}">Bluesky</a></li>{% endif %}
-{% if site.author.orcid %}<li><a href="{{ site.author.orcid }}">ORCID</a></li>{% endif %}
-{% if site.author.researchgate %}<li><a href="{{ site.author.researchgate }}">ResearchGate</a></li>{% endif %}
-{% if site.author.googlescholar %}<li><a href="{{ site.author.googlescholar }}">Google Scholar</a></li>{% endif %}
-</ul>
-
-### Research Interests
-
-Besides traditional machine learning and deep learning, I am particularly interested in computer vision and pose estimation projects. My Masters thesis "Towards quantitative analysis for climbing - technique observation using pose estimation" evaluated the accuracy of current pose-estimation models when used in a climbing specific setting. Read more about my masters thesis in the blog section below.
+<div class="about-socials" style="display:flex; flex-wrap:wrap; gap:1.25rem; margin:1.5em 0 0 0; font-size:1.6rem;">
+{% if site.author.github %}<a href="https://github.com/{{ site.author.github }}" aria-label="GitHub" title="GitHub"><i class="fab fa-fw fa-github"></i></a>{% endif %}
+{% if site.author.linkedin %}<a href="https://www.linkedin.com/in/{{ site.author.linkedin }}" aria-label="LinkedIn" title="LinkedIn"><i class="fab fa-fw fa-linkedin"></i></a>{% endif %}
+{% if site.author.email %}<a href="mailto:{{ site.author.email }}" aria-label="Email" title="Email"><i class="fas fa-fw fa-envelope"></i></a>{% endif %}
+{% if site.author.twitter %}<a href="https://twitter.com/{{ site.author.twitter }}" aria-label="X (Twitter)" title="X (Twitter)"><i class="fab fa-fw fa-x-twitter"></i></a>{% endif %}
+{% if site.author.bluesky %}<a href="https://bsky.app/profile/{{ site.author.bluesky }}" aria-label="Bluesky" title="Bluesky"><i class="fab fa-fw fa-bluesky"></i></a>{% endif %}
+{% if site.author.orcid %}<a href="{{ site.author.orcid }}" aria-label="ORCID" title="ORCID"><i class="ai ai-orcid ai-fw"></i></a>{% endif %}
+{% if site.author.researchgate %}<a href="{{ site.author.researchgate }}" aria-label="ResearchGate" title="ResearchGate"><i class="fab fa-fw fa-researchgate"></i></a>{% endif %}
+{% if site.author.googlescholar %}<a href="{{ site.author.googlescholar }}" aria-label="Google Scholar" title="Google Scholar"><i class="ai ai-google-scholar ai-fw"></i></a>{% endif %}
+</div>
 
 ---
 
-## Blog Posts
-{: #blog}
+## Writing
+{: #writing}
 
 {% for post in site.posts %}
-- **[{{ post.title }}]({{ post.url | relative_url }})** <span class="page__meta">{{ post.date | date: "%B %-d, %Y" }}</span>
+- [{{ post.title }}]({{ post.url | relative_url }})
 {% else %}
-*No blog posts yet — check back soon.*
+*No posts yet — check back soon.*
 {% endfor %}
 
 ---
@@ -50,28 +48,15 @@ Besides traditional machine learning and deep learning, I am particularly intere
 ## Ecological Information & Climate Change Posts
 {: #climate}
 
-{% assign climate_tags = site.posts | where_exp: "post", "post.tags contains 'Climate'" %}
-{% assign ecology_tags = site.posts | where_exp: "post", "post.tags contains 'Ecology'" %}
-{% assign climate_cats = site.posts | where_exp: "post", "post.categories contains 'Climate'" %}
-{% assign ecology_cats = site.posts | where_exp: "post", "post.categories contains 'Ecology'" %}
-{% assign climate_posts = climate_tags | concat: ecology_tags | concat: climate_cats | concat: ecology_cats | uniq %}
-{% if climate_posts.size > 0 %}
-{% for post in climate_posts %}
-- **[{{ post.title }}]({{ post.url | relative_url }})** <span class="page__meta">{{ post.date | date: "%B %-d, %Y" }}</span>
-{% endfor %}
-{% else %}
-*Coming soon — posts about ecology and climate change will appear here automatically. Tag a post with `Climate` or `Ecology` in its front matter to have it show up in this section.*
-{% endif %}
+[Coming soon](#)
 
 ---
 
-## Technical Projects
+## Projects
 {: #projects}
 
 {% for item in site.portfolio %}
-### [{{ item.title }}]({{ item.url | relative_url }})
-{{ item.excerpt }}
-
+- [{{ item.title }}]({{ item.url | relative_url }})
 {% else %}
 *No projects listed yet.*
 {% endfor %}
