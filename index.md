@@ -2,7 +2,7 @@
 layout: archive
 title: "Colin Billhardt"
 permalink: /
-author_profile: true
+author_profile: false
 redirect_from: 
   - /about/
   - /about.html
@@ -13,7 +13,22 @@ redirect_from:
 
 I'm Colin Billhardt, a data scientist with an MSc in Data Science (Distinction) from the University of Bath and a BSc in Computer Science with Management from King's College London.
 
-[Download my English CV](/Colin_Beniyaz_Billhardt_CV.pdf) | [Download my German CV](/Colin_B_Billhardt_Lebenslauf.pdf)
+[English CV](/Colin_Beniyaz_Billhardt_CV.pdf)
+<br>
+[German CV](/Colin_B_Billhardt_Lebenslauf.pdf)
+
+### Connect
+
+<ul class="about-socials" style="list-style:none; padding:0; margin:1em 0; display:flex; flex-wrap:wrap; gap:1.25rem;">
+{% if site.author.github %}<li><a href="https://github.com/{{ site.author.github }}">GitHub</a></li>{% endif %}
+{% if site.author.linkedin %}<li><a href="https://www.linkedin.com/in/{{ site.author.linkedin }}">LinkedIn</a></li>{% endif %}
+{% if site.author.email %}<li><a href="mailto:{{ site.author.email }}">Email</a></li>{% endif %}
+{% if site.author.twitter %}<li><a href="https://twitter.com/{{ site.author.twitter }}">X (Twitter)</a></li>{% endif %}
+{% if site.author.bluesky %}<li><a href="https://bsky.app/profile/{{ site.author.bluesky }}">Bluesky</a></li>{% endif %}
+{% if site.author.orcid %}<li><a href="{{ site.author.orcid }}">ORCID</a></li>{% endif %}
+{% if site.author.researchgate %}<li><a href="{{ site.author.researchgate }}">ResearchGate</a></li>{% endif %}
+{% if site.author.googlescholar %}<li><a href="{{ site.author.googlescholar }}">Google Scholar</a></li>{% endif %}
+</ul>
 
 ### Research Interests
 
@@ -47,6 +62,7 @@ Besides traditional machine learning and deep learning, I am particularly intere
 {% else %}
 *Coming soon — posts about ecology and climate change will appear here automatically. Tag a post with `Climate` or `Ecology` in its front matter to have it show up in this section.*
 {% endif %}
+
 ---
 
 ## Technical Projects
