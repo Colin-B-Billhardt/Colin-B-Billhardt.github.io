@@ -11,7 +11,9 @@ redirect_from:
 ## About Me
 {: #about}
 
-I'm Colin, a Technology and AI consultant based in Munich. My passion lies in the application of technology to help solve climate change related issues. If you're also interested in the intersection between technology and nature, feel free to browse through some of my articles on the topic below or my thoughts on some interesting research papers I've recently read. You can reach me for any inquiries at colin.Billhardt@gmail.com.
+I'm Colin, a Technology and AI consultant based in Munich. My passion lies in the application of technology to help solve climate change related issues. 
+
+If you're also interested in the intersection between technology and nature, feel free to browse through some of my articles on the topic below or my thoughts on some interesting research papers I've recently read. You can reach me for any inquiries at colin.Billhardt@gmail.com.
 
 [English CV](/Colin_Beniyaz_Billhardt_CV.pdf)
 <br>
@@ -71,14 +73,3 @@ I'm Colin, a Technology and AI consultant based in Munich. My passion lies in th
 {% else %}
 *Coming soon — books I've written or am working on will be listed here.*
 {% endif %}
-
----
-
-## Research Papers
-{: #papers}
-
-{% for pub in site.publications %}
-- **[{{ pub.title }}]({{ pub.url | relative_url }})** — *{{ pub.venue }}*, {{ pub.date | date: "%Y" }}
-{% else %}
-*No papers listed yet.*
-{% endfor %}
