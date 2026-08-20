@@ -1,16 +1,9 @@
-# The following is the order of the links in the header of the website.
-#
-# All links point to anchors on the homepage (single-page layout).
-
 main:
   - title: "About"
     url: /#about
 
   - title: "Writing"
-    url: /#blog
-
-  - title: "Ecological & Climate"
-    url: /#climate
+    url: /#writing
 
   - title: "Projects"
     url: /#projects
